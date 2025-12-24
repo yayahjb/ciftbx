@@ -297,6 +297,8 @@ CYCLOPS2 or cif2cif or cif2xml or cif2pdb, you may leave them out, but they are 
 examples of working CIFtbx applications, so we suggest taking a
 look at them if you are new to CIFtbx.
 <HR>
+For convenience, the top level Makefile allows for make alltests to run all the tests
+in order.  To just run make tests you need to drop down to a single archive.
 <address>
 For further information contact Syd Hall (
 <script language="javascript" type="text/javascript">
