@@ -3240,7 +3240,10 @@ C
          if(type_.eq.'save')           goto 210
          if(type_.eq.'glob')           goto 210
          if(type_.ne.'fini')           goto 220
-206      if(loop_)                     goto 270
+206      if(loop_ .and. type_.eq.'fini')
+     *     call tbxxerr(
+     *     ' Unexpected end of data after loop_')
+         if(loop_)                     goto 270
 210      if(nitem.eq.0)                goto 215
 C
 C....... End of loop detected; save pointers
@@ -4307,6 +4310,7 @@ C
          posnam_=0
          quote_=' '
          goto 220
+
 140      if(lastch.eq.1.and.buffer(1:1).eq.' ') go to 200
 C
 C....... Process this character in the line
@@ -6028,6 +6032,8 @@ C
 CDBG     print *,' processing next line'
            call getlin(flag)
            if (flag.eq.'fini') then
+             long_=0
+             strg_=' '
              type_='fini'
              text_=.false.
              depth_=0

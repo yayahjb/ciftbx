@@ -8,6 +8,7 @@
 
                Information for CIFtbx 4.1.1 08 March 2024 2009
                            Updated 14 August 2024
+                        Updated to 4.1.2 30 July 2026
      __________________________________________________________________
 
                  Before using this software, please read the
@@ -25,10 +26,10 @@
                   |#####|_________________________________________________
                  ||#####|                 ___________________             |
         __/|_____||#####|________________|&&&&&&&&&&&&&&&&&&&||           |
-<\\\\\\\\_ |_____________________________|&&& 08 Mar 2024 &&&||           |
+<\\\\\\\\_ |_____________________________|&&& 30 Jul 2026 &&&||           |
           \|     ||#####|________________|&&&&&&&&&&&&&&&&&&&||___________|
                   |#####|
-                  |#####|                   Version 4.1.1
+                  |#####|                   Version 4.1.2
                   |#####|
                  /#######\
                 |#########|
@@ -76,7 +77,7 @@ _____________________||_____________________________________________________
 
    This file contains the complete set of source decks and test data
    needed to implement and test the CIFtbx Tool Box routines, Version
-   4.1.1
+   4.1.2
 
    This is a release of version 4 of the CIF Tool Box with the necessary
    revisions to handle bracketed the bracketed constructs used in DDLm,
@@ -399,6 +400,9 @@ _____________________||_____________________________________________________
   5. CHANGES
 
   CHANGES FROM CIFTBX3 TO CIFTBX4
+   The 4.1.2 release is a version with a patch by Branton Campbell for
+   the 2.6.4 to detect a premature end of file, adapted by H. J.
+   Bernstein to version 4.1.1.
 
    The 4.1.0 release was the first stable release of CIFtbx 4. The 4.1.1
    release added support for html output from cif2cif. The major changes
